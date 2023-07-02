@@ -12,11 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX2020/device.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
+# Inherit some common Pixel Experience stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := superior_RMX2020
+PRODUCT_NAME := aosp_RMX2020
 PRODUCT_DEVICE := RMX2020
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX2020
@@ -26,9 +26,8 @@ PRODUCT_SYSTEM_MODEL := RMX2020
 PRODUCT_SYSTEM_NAME := RMX2020
 PRODUCT_SYSTEM_DEVICE := RMX2020
 
-# SuperiorOS additions
+# Pixel Experience additions
 TARGET_BOOT_ANIMATION_RES := 720
-SUPERIOR_OFFICIAL := true
 
 # Build info
 BUILD_FINGERPRINT := "realme/RMX2020/RMX2020:10/QP1A.190711.020/1651798546:user/release-keys"
